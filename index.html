@@ -9,21 +9,25 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- Titulo de Pagina -->
         <h1 class="text-center">My Form Alejandro Guilarte</h1>
         <h3 class="text-center">Cohorte 110</h3>
-        <!-- Tarjeta de Formulario -->
         <div class="position-absolute top-50 start-50 translate-middle">
             <div class="card" style="width: 1000px;">
                 <img src="https://picsum.photos/1000/80" class="card-img-top" alt="picsumPhotos"/>
-                <div><!-- Cuerpo del Formulario -->
+
+                <!-- 
+                Tenia varios FORM entre DIV 
+                he anidado todo en un solo form
+                 -->
+
+                <form> <!-- Esto era un div ahora es el form que anida todo -->
                     <h4 class="text-center">Sample Form</h4>
                     <div class="card-body">
-                        <div><!-- Inf Tarjeta Bancaria -->
+                        <div>
                             <div class="alert alert-danger" role="alert">
                                 Danger alert—check it out!
                             </div>
-                            <form class="row g-3 needs-validation">
+                            <div class="row g-3 needs-validation"> <!-- Esta linea era un form ahora es un div -->
                                 <div class="col-md-6">
                                     <label for="NumberCard" class="form-label">Number Card</label>
                                     <input type="number" id="NumberCard" placeholder="XXXX-XXXX-XXXX-XXXX" class="form-control">
@@ -36,11 +40,11 @@
                                     <label for="Amount" class="form-label">Amount</label>
                                     <input type="number" id="Amount" placeholder="€€€€" class="form-control">
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                        <div class="d-flex row g-3"><!-- Informacion Personal -->
+                        <div class="d-flex row g-3">
                                 <div class="col-md-6">
-                                    <form class="row g-3 needs-validation">
+                                    <div class="row g-3 needs-validation"> <!-- Esta linea era un form ahora es un div -->
                                         <div>
                                             <label for="inputCity" class="form-label">First Name</label>
                                             <input type="text" class="form-control" id="inputCity">
@@ -67,15 +71,14 @@
                                                 <label class="form-check-label" for="inlineRadio3"><i class="fa-solid fa-bitcoin-sign fs-4"></i></label>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <form class="row g-3 needs-validation">
+                                    <div class="row g-3 needs-validation"> <!-- Esta linea era un form ahora es un div -->
                                         <div>
                                             <label for="inputCity" class="form-label">Last Name</label>
                                             <input type="text" class="form-control" id="inputCity">
                                         </div>
-                                        <!-- AQUI VOY -->
                                         <div class="d-flex justify-content-between">
                                             <div class="col-md-6">
                                                 <label for="state" class="form-label">State</label>
@@ -91,7 +94,7 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                             <span>Add any notes here.</span>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -99,7 +102,7 @@
                             <button class="btn btn-primary" type="button">Send</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
